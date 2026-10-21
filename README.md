@@ -1,8 +1,8 @@
 # Serial Game Server
 
-EEE3095S CS Project 2026. An STM32F051 acts as the referee for tic-tac-toe over
-a UART link; a Python GUI renders the board and forwards clicks. The board owns
-the game state and the client is never trusted with a rule.
+An STM32F051 acts as the referee for tic-tac-toe over a UART link. A Python GUI
+renders the board and forwards clicks. The board owns the game state and the
+client is never trusted with a rule.
 
 ## Layout
 
@@ -15,7 +15,7 @@ the game state and the client is never trusted with a rule.
 | `sim/` | host build of the same core, speaks the protocol over stdin and stdout |
 | `client/` | Tkinter GUI |
 | `tests/` | pytest harness, runs against the simulator or a serial port |
-| `report/` | the report, LaTeX on the course template |
+| `report/` | the write-up, LaTeX |
 
 The same `server/core/` sources build for the board and for the host, so a rule
 bug is found on a laptop and not in the lab.
